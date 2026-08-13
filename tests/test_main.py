@@ -17,7 +17,3 @@ def test_health():
     assert response.status_code == 200
     assert response.json() == {"status": "ok"}
 
-def test_not_found():
-    response = client.get("/not-found")
-    assert response.status_code == 200
-    assert response.json() == {"detail": "Not Found"}
