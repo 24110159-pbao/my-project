@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CI/CD Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div>
+                <h1>⚡ CI/CD Dashboard</h1>
+                <p>FastAPI Backend Monitoring</p>
+            </div>
+
+            <div class="api-url">
+                ● <span id="apiUrl"></span>
+            </div>
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div>
+                <span class="badge">SYSTEM MONITORING</span>
+
+                <h2>
+                    Your Backend.
+                    <br>
+                    <span>Connected & Ready.</span>
+                </h2>
+
+                <p>
+                    Dashboard kiểm tra trạng thái kết nối
+                    giữa frontend và FastAPI backend.
+                </p>
+            </div>
+
+            <div class="hero-icon">
+                ⚡
+            </div>
+
+        </section>
+
+
+        <!-- STATUS -->
+        <section class="cards">
+
+            <!-- Backend -->
+            <div class="card">
+
+                <h3>BACKEND STATUS</h3>
+
+                <div id="backendStatus"
+                     class="status checking">
+                    Đang kiểm tra...
+                </div>
+
+                <p id="statusDescription">
+                    Đang kết nối tới FastAPI...
+                </p>
+
+            </div>
+
+
+            <!-- API -->
+            <div class="card">
+
+                <h3>API ENDPOINT</h3>
+
+                <div class="endpoint">
+                    <span>GET</span>
+                    /
+                </div>
+
+                <div class="endpoint">
+                    <span>GET</span>
+                    /health
+                </div>
+
+            </div>
+
+
+            <!-- Environment -->
+            <div class="card">
+
+                <h3>ENVIRONMENT</h3>
+
+                <div class="environment">
+                    Development
+                </div>
+
+                <p>HTML + CSS + JavaScript</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- API RESPONSE -->
+            <div class="card">
+
+                <h3>API RESPONSE</h3>
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+                        GET /
+                    </div>
+
+                    <pre id="apiMessage">
+Loading...
+                    </pre>
+
+                </div>
+
+                <button id="callApiButton">
+                    🔄 Gọi API
+                </button>
+
+            </div>
+
+
+            <!-- HEALTH -->
+            <div class="card">
+
+                <h3>HEALTH CHECK</h3>
+
+                <div id="healthCircle"
+                     class="health checking">
+
+                    <strong id="healthStatus">
+                        ...
+                    </strong>
+
+                    <small>STATUS</small>
+
+                </div>
+
+
+                <div class="health-info">
+
+                    <p>
+                        Endpoint:
+                        <strong>/health</strong>
+                    </p>
+
+                    <p>
+                        Status:
+                        <strong id="healthText">
+                            Checking
+                        </strong>
+                    </p>
+
+                    <p>
+                        Last check:
+                        <strong id="lastCheck">
+                            --
+                        </strong>
+                    </p>
+
+                </div>
+
+
+                <button id="healthButton">
+                    Kiểm tra lại
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            FastAPI • JavaScript • CI/CD Ready
+        </footer>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
