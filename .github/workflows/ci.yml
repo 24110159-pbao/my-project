@@ -1,11 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-      
   pull_request:
     branches:
       - main
@@ -34,4 +29,4 @@ jobs:
         run: pytest
 
       - name: Check application import
-        run: python -c "from app.main import app; print(app)"
+        run: python -c "from backend.main import app; print(app)"
