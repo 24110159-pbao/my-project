@@ -30,4 +30,4 @@ jobs:
         run: pytest
 
       - name: Check application import
-        run: python -c "from backendkend.main import app; print(app)"
+        run: python -c "from backend.main import app; print(app)"
