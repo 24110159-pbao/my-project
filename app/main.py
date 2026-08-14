@@ -11,7 +11,3 @@ def read_root():
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
-
-@app.get("/not-found")
-def read_not_found():
-    return {"detail": "Not Found"}
