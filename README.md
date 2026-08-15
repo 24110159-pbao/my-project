@@ -17,7 +17,10 @@ project/
 ├── requirements.txt
 └── pytest.ini
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 🛠️ Công nghệ
 Frontend: HTML, CSS, JavaScript
 Backend: FastAPI
