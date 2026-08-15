@@ -1,6 +1,7 @@
 ⚡ CI/CD Dashboard
 Dashboard kiểm tra trạng thái kết nối giữa Frontend và FastAPI Backend.
 📁 Cấu trúc
+```text
 project/
 ├── backend/
 │   └── main.py
@@ -15,6 +16,7 @@ project/
 │       └── ci.yml
 ├── requirements.txt
 └── pytest.ini
+```
 
 🛠️ Công nghệ
 Frontend: HTML, CSS, JavaScript
