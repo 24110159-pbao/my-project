@@ -2,7 +2,7 @@
 // CẤU HÌNH BACKEND
 // =============================
 
-const API_URL = "https://mentioned-purchased-rings-records.trycloudflare.com";
+const API_URL = "https://matter-tennessee-consultants-sessions.trycloudflare.com";
 
 
 // =============================
